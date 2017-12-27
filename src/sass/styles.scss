@@ -2,6 +2,9 @@
 // Import Font Awesome
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+// Import fonts
+@import url("https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:500,700|Open+Sans:400,400i,600");
+
 // Import first part of Bulma
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import "../../node_modules/bulma/sass/utilities/functions";
@@ -16,6 +19,7 @@ $primary-invert: $cyan-invert;
 @import "../../node_modules/bulma/sass/utilities/controls";
 @import "../../node_modules/bulma/sass/base/minireset";
 @import "../../node_modules/bulma/sass/base/generic";
+@import "../../node_modules/bulma/sass/base/helpers";
 @import "../../node_modules/bulma/sass/grid/columns";
 @import "../../node_modules/bulma/sass/elements/container";
 @import "../../node_modules/bulma/sass/elements/form";

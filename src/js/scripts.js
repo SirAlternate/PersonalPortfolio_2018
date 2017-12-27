@@ -1,2 +1,5 @@
+//=require aos/dist/aos.js
 
-AOS.init();
+(function() {
+  AOS.init();
+})();

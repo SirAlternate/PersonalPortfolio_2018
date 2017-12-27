@@ -24,7 +24,7 @@
         "year": "2017",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
         "image": "2017_StoryWings.jpg",
-        "link": "https://storywings.net",
+        "link": "http://storywings.net",
         "technologies": [{
             "icon": "laravel/laravel-plain.svg",
             "title": "Laravel"
@@ -33,7 +33,7 @@
             "title": "Vue.js 2"
         }, {
             "icon": "bootstrap/bootstrap-plain.svg",
-            "title": "Bootstrap"
+            "title": "Bootstrap 3"
         }, {
             "icon": "sass/sass-original.svg",
             "title": "Sass"
@@ -44,7 +44,7 @@
         "year": "2017",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
         "image": "2017_DigitalGamingHub.jpg",
-        "link": "https://gamehub.rpi.edu",
+        "link": "http://gamehub.rpi.edu",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"
@@ -53,7 +53,7 @@
             "title": "JavaScript"
         }, {
             "icon": "bootstrap/bootstrap-plain.svg",
-            "title": "Bootstrap"
+            "title": "Bootstrap 3"
         }, {
             "icon": "sass/sass-original.svg",
             "title": "Sass"
@@ -73,7 +73,7 @@
             "title": "JavaScript"
         }, {
             "icon": "bootstrap/bootstrap-plain.svg",
-            "title": "Bootstrap"
+            "title": "Bootstrap 3"
         }, {
             "icon": "sass/sass-original.svg",
             "title": "Sass"
