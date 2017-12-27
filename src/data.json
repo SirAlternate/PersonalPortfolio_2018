@@ -1,0 +1,97 @@
+{
+    "work": [{
+        "name": "This Site!",
+        "client": "Personal Project",
+        "year": "2018",
+        "image": "2018_PersonalSite.jpg",
+        "button-text": "You're already here",
+        "technologies": [{
+            "icon": "handlebars/handlebars-original.svg",
+            "title": "Handlebars"
+        }, {
+            "icon": "javascript/javascript-original.svg",
+            "title": "JavaScript"
+        }, {
+            "icon": "bulma/bulma-original.svg",
+            "title": "Bulma"
+        }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
+        }]
+    }, {
+        "name": "StoryWings Library",
+        "client": "StoryWings",
+        "year": "2017",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "image": "2017_StoryWings.jpg",
+        "link": "https://storywings.net",
+        "technologies": [{
+            "icon": "laravel/laravel-plain.svg",
+            "title": "Laravel"
+        }, {
+            "icon": "vuejs/vuejs-original.svg",
+            "title": "Vue.js 2"
+        }, {
+            "icon": "bootstrap/bootstrap-plain.svg",
+            "title": "Bootstrap"
+        }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
+        }]
+    }, {
+        "name": "Tech Valley Digital Gaming Hub",
+        "client": "Rensselaer Polytechnic Institute",
+        "year": "2017",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "image": "2017_DigitalGamingHub.jpg",
+        "link": "https://gamehub.rpi.edu",
+        "technologies": [{
+            "icon": "wordpress/wordpress-plain.svg",
+            "title": "WordPress"
+        }, {
+            "icon": "javascript/javascript-original.svg",
+            "title": "JavaScript"
+        }, {
+            "icon": "bootstrap/bootstrap-plain.svg",
+            "title": "Bootstrap"
+        }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
+        }]
+    }, {
+        "name": "LunatiK eSports",
+        "client": "LunatiK eSports",
+        "year": "2015",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "image": "2015_LunatikEsports.jpg",
+        "button-text": "Site Offline :(",
+        "technologies": [{
+            "icon": "wordpress/wordpress-plain.svg",
+            "title": "WordPress"
+        }, {
+            "icon": "javascript/javascript-original.svg",
+            "title": "JavaScript"
+        }, {
+            "icon": "bootstrap/bootstrap-plain.svg",
+            "title": "Bootstrap"
+        }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
+        }]
+    }, {
+        "name": "Sneaky Spanish",
+        "client": "School Project",
+        "year": "2015",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "image": "2015_SneakySpanish.jpg",
+        "link": "https://chrome.google.com/webstore/detail/sneaky-spanish/fmbgmlhpadiloggofeliagghggmopgbk",
+        "button-text": "View on Chrome Web Store",
+        "technologies": [{
+            "icon": "chrome/chrome-original.svg",
+            "title": "Chrome"
+        }, {
+            "icon": "javascript/javascript-original.svg",
+            "title": "JavaScript"
+        }]
+    }]
+}

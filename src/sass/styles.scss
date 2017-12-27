@@ -1,0 +1,35 @@
+
+// Import Font Awesome
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// Import first part of Bulma
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+// Set Bulma variables
+$primary: $cyan;
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+$primary-invert: $cyan-invert;
+
+// Import second part of Bulma
+@import "../../node_modules/bulma/sass/utilities/mixins";
+@import "../../node_modules/bulma/sass/utilities/controls";
+@import "../../node_modules/bulma/sass/base/minireset";
+@import "../../node_modules/bulma/sass/base/generic";
+@import "../../node_modules/bulma/sass/grid/columns";
+@import "../../node_modules/bulma/sass/elements/container";
+@import "../../node_modules/bulma/sass/elements/form";
+@import "../../node_modules/bulma/sass/elements/tag";
+@import "../../node_modules/bulma/sass/elements/button";
+@import "../../node_modules/bulma-tooltip/tooltip";
+
+// Import AOS
+@import "../../node_modules/aos/src/sass/aos";
+
+// Import globals
+@import "global";
+
+// Import partials
+@import "welcome";
+@import "portfolio";
+@import "contact";
