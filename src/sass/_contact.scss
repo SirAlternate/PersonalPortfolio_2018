@@ -14,11 +14,15 @@
   .contact-form {
     .label {
       color: #fff;
+      text-transform: uppercase;
     }
 
-    .icon {
-      .fa {
-        margin: 10px;
+    .has-icons-left,
+    .has-icons-right {
+      .icon {
+        .fa {
+          margin: 10px;
+        }
       }
     }
 

@@ -1,16 +1,13 @@
 .section-portfolio {
-
   .portfolio-item {
     padding: 60px 0;
     text-align: center;
-
     @include tablet {
       text-align: left;
     }
 
     &:nth-of-type(even) {
       background-color: #fafafa;
-
       @include desktop {
         .image {
           text-align: right;
@@ -22,7 +19,6 @@
       position: relative;
       max-height: 375px;
       text-align: center;
-
       @include tablet {
         text-align: left;
       }
@@ -86,8 +82,8 @@
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        transition: 0.3s ease-out background-color,
-                    0.3s ease-out color;
+        transition: 0.3s ease-out background-color, 0.3s ease-out color;
+
         &:hover {
           background-color: transparent;
           color: $primary;

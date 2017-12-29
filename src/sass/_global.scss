@@ -1,15 +1,84 @@
 $family-primary: 'Open Sans', sans-serif;
 $family-heading: 'Montserrat', sans-serif;
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: $family-heading;
+}
+
+.navbar.is-transparent {
+  background-color: transparent;
+
+  .navbar-brand {
+    img {
+      height: 70px;
+      width: 70px;
+      @include mobile {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  .navbar-menu {
+    .navbar-item {
+      margin: 10px 30px 10px 0;
+      padding: 0.5rem 0.7rem;
+      color: #fff;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s ease-out background-color, 0.3s ease-out color, 0.3s ease-out border-color;
+
+      &:hover {
+        border-bottom: 3px solid $primary;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .navbar-box {
+      padding: 0.5rem 1rem;
+      border: 2px solid #fff;
+
+      &:hover {
+        background-color: $primary !important;
+        border-bottom: 2px solid #fff;
+      }
+    }
+
+    &.is-active {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: $primary;
+
+      .navbar-item {
+        margin: 0;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      .navbar-box {
+        &:hover {
+          background-color: #fff !important;
+        }
+      }
+    }
+  }
 }
 
 .container {
   @include tablet {
     padding: 0 30px;
   }
-
   @include mobile {
     padding: 0 15px;
   }

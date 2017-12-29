@@ -5,12 +5,21 @@
   text-align: center;
   color: #fff;
 
+  .navbar {
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
   .full-height {
     height: 100%;
   }
 
   .pretitle {
-    margin-top: -80px;
+    margin-top: -60px;
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -28,6 +37,28 @@
     #whoami {
       background-color: black;
       padding: 0 8px 2px;
+    }
+  }
+
+  .bottom-arrow {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    i {
+      font-size: 4.5em;
+    }
+
+    @include mobile {
+      font-size: 0.9em;
+
+      i {
+        font-size: 2.5em;
+      }
     }
   }
 

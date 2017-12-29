@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const handlebars = require('gulp-compile-handlebars');
 const minify = require('gulp-minify');
 const inject = require('gulp-inject');
+const imagemin = require('gulp-imagemin');
 
 const templateOptions = {
     batch: ['./src/templates/partials'],
@@ -16,8 +17,17 @@ const templateOptions = {
                 return options.inverse(this);
             }
         }
+    },
+    compile: {
+        preventIndent: 'true'
     }
 };
+
+gulp.task('images', () => {
+    gulp.src(['./src/images/**/**.jpg', './src/images/**/**.png', './src/images/**/**.jpeg', './src/images/**/**.svg'])
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/img'));
+});
 
 gulp.task('styles', () => {
     gulp.src('./src/sass/**/*.scss')
@@ -57,7 +67,10 @@ gulp.task('scripts-min', () => {
 gulp.task('templates', () => {
     gulp.src('./src/templates/index.handlebars')
         .pipe(handlebars(require('./src/data.json'), templateOptions))
-        .pipe(inject(gulp.src(['./dist/css/styles.css', './dist/js/scripts.js']), {
+        .pipe(inject(gulp.src([
+            './dist/css/styles.css',
+            './dist/js/scripts.js',
+        ]), {
             ignorePath: '/dist/',
             removeTags: true,
             addRootSlash: false
@@ -69,18 +82,16 @@ gulp.task('templates', () => {
 gulp.task('templates-min', () => {
     gulp.src('./src/templates/index.handlebars')
         .pipe(handlebars(require('./src/data.json'), templateOptions))
-        .pipe(inject(gulp.src(['./dist/css/styles.min.css', './dist/js/scripts.min.js']), {
+        .pipe(inject(gulp.src([
+            './dist/css/styles.min.css',
+            './dist/js/scripts.min.js'
+        ]), {
             ignorePath: '/dist/',
             removeTags: true,
             addRootSlash: false
         }))
         .pipe(rename('index.html'))
         .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('images', () => {
-    gulp.src('./src/images/**/**.*')
-        .pipe(gulp.dest('./dist/img'));
 });
 
 gulp.task('default', ['images', 'scripts', 'styles', 'templates']);

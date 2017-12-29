@@ -22,7 +22,7 @@
         "name": "StoryWings Library",
         "client": "StoryWings",
         "year": "2017",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "description": "Designed and built an application to create a streamlined process for customers to submit, save, and share their voice recordings.",
         "image": "2017_StoryWings.jpg",
         "link": "http://storywings.net",
         "technologies": [{
@@ -42,9 +42,9 @@
         "name": "Tech Valley Digital Gaming Hub",
         "client": "Rensselaer Polytechnic Institute",
         "year": "2017",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "description": "Worked with Rensselaer Polytechnic Institute's Games and Simulation Arts and Sciences department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub. The site's main goal is to encourage students and businesses to create new innovative technologies in the Capital Region.",
         "image": "2017_DigitalGamingHub.jpg",
-        "link": "http://gamehub.rpi.edu",
+        "button-text": "Coming 2018",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"
@@ -62,7 +62,7 @@
         "name": "LunatiK eSports",
         "client": "LunatiK eSports",
         "year": "2015",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "description": "Designed and developed a custom WordPress theme for LunatiK eSports' main website.",
         "image": "2015_LunatikEsports.jpg",
         "button-text": "Site Offline :(",
         "technologies": [{
@@ -82,7 +82,7 @@
         "name": "Sneaky Spanish",
         "client": "School Project",
         "year": "2015",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.",
+        "description": "Sneaky Spanish is a Chrome Extension that allows you to learn Spanish in the context of web pages you are already reading on the web by selectively translating words and passages on the pages you view.",
         "image": "2015_SneakySpanish.jpg",
         "link": "https://chrome.google.com/webstore/detail/sneaky-spanish/fmbgmlhpadiloggofeliagghggmopgbk",
         "button-text": "View on Chrome Web Store",
