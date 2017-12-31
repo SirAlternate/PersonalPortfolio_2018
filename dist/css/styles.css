@@ -3579,6 +3579,191 @@ a.tag:hover {
   .buttons.is-right {
     justify-content: flex-end; }
 
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem; }
+  .icon.is-small {
+    height: 1rem;
+    width: 1rem; }
+  .icon.is-medium {
+    height: 2rem;
+    width: 2rem; }
+  .icon.is-large {
+    height: 3rem;
+    width: 3rem; }
+
+.notification {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  position: relative; }
+  .notification:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .notification a:not(.button) {
+    color: currentColor;
+    text-decoration: underline; }
+  .notification strong {
+    color: currentColor; }
+  .notification code,
+  .notification pre {
+    background: white; }
+  .notification pre code {
+    background: transparent; }
+  .notification > .delete {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em; }
+  .notification .title,
+  .notification .subtitle,
+  .notification .content {
+    color: currentColor; }
+  .notification.is-white {
+    background-color: white;
+    color: #0a0a0a; }
+  .notification.is-black {
+    background-color: #0a0a0a;
+    color: white; }
+  .notification.is-light {
+    background-color: whitesmoke;
+    color: #363636; }
+  .notification.is-dark {
+    background-color: #363636;
+    color: whitesmoke; }
+  .notification.is-primary {
+    background-color: #209cee;
+    color: #fff; }
+  .notification.is-link {
+    background-color: #3273dc;
+    color: #fff; }
+  .notification.is-info {
+    background-color: #209cee;
+    color: #fff; }
+  .notification.is-success {
+    background-color: #23d160;
+    color: #fff; }
+  .notification.is-warning {
+    background-color: #ffdd57;
+    color: rgba(0, 0, 0, 0.7); }
+  .notification.is-danger {
+    background-color: #ff3860;
+    color: #fff; }
+
+.block:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.delete {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 20px; }
+  .delete:before, .delete:after {
+    background-color: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center; }
+  .delete:before {
+    height: 2px;
+    width: 50%; }
+  .delete:after {
+    height: 50%;
+    width: 2px; }
+  .delete:hover, .delete:focus {
+    background-color: rgba(10, 10, 10, 0.3); }
+  .delete:active {
+    background-color: rgba(10, 10, 10, 0.4); }
+  .delete.is-small {
+    height: 16px;
+    max-height: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    width: 16px; }
+  .delete.is-medium {
+    height: 24px;
+    max-height: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    width: 24px; }
+  .delete.is-large {
+    height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    width: 32px; }
+
+.heading {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+.highlight {
+  font-weight: 400;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0; }
+  .highlight:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .highlight pre {
+    overflow: auto;
+    max-width: 100%; }
+
+.loader {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.number {
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 290486px;
+  display: inline-flex;
+  font-size: 1.25rem;
+  height: 2em;
+  justify-content: center;
+  margin-right: 1.5rem;
+  min-width: 2.5em;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  vertical-align: top; }
+
 .navbar {
   background-color: white;
   min-height: 3.25rem;
@@ -5241,14 +5426,24 @@ h4 {
       padding: 0 8px 2px; }
   .section-welcome .bottom-arrow {
     position: absolute;
-    bottom: 2em;
+    bottom: 6em;
     left: 0;
     right: 0;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600; }
-    .section-welcome .bottom-arrow i {
+    font-weight: 600;
+    color: #fff; }
+    .section-welcome .bottom-arrow .fa {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25px;
       font-size: 4.5em; }
+    @media screen and (max-width: 768px) {
+      .section-welcome .bottom-arrow {
+        font-size: 0.9em; }
+        .section-welcome .bottom-arrow .fa {
+          font-size: 2.5em; } }
   @media screen and (min-width: 769px), print {
     .section-welcome .pretitle {
       font-size: 1em; }
@@ -5318,12 +5513,13 @@ h4 {
       .section-portfolio .portfolio-item .technologies li img {
         height: 100%; }
   .section-portfolio .portfolio-item .button {
-    margin-top: 30px; }
+    margin-top: 30px;
+    border: 2px solid transparent; }
     .section-portfolio .portfolio-item .button.is-primary {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
-      transition: 0.3s ease-out background-color, 0.3s ease-out color; }
+      transition: 0.3s ease-out background-color, 0.3s ease-out color, 0.3s ease-out border-color; }
       .section-portfolio .portfolio-item .button.is-primary:hover {
         background-color: transparent;
         color: #209cee;
@@ -5337,11 +5533,12 @@ h4 {
     margin-bottom: 40px; }
     .section-contact .section-title:after {
       border-color: #fff; }
-  .section-contact .contact-form .label {
-    color: #fff;
-    text-transform: uppercase; }
-  .section-contact .contact-form .has-icons-left .icon .fa,
-  .section-contact .contact-form .has-icons-right .icon .fa {
-    margin: 10px; }
-  .section-contact .contact-form .button {
-    margin-top: 20px; }
+  .section-contact .contact-form {
+    overflow: hidden; }
+    .section-contact .contact-form .notification {
+      display: none; }
+    .section-contact .contact-form .label {
+      color: #fff;
+      text-transform: uppercase; }
+    .section-contact .contact-form .button {
+      margin-top: 20px; }

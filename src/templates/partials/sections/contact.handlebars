@@ -2,7 +2,15 @@
     <h1 class="section-title">Contact Me</h1>
 
     <div class="container">
-        <form id="contact-form" class="contact-form" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault();" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+            <div id="contact-form-success" class="notification is-success">
+                <button class="delete"></button>
+                <p class="text"></p>
+            </div>
+            <div id="contact-form-danger" class="notification is-danger">
+                <button class="delete"></button>
+                <p class="text"></p>
+            </div>
             <div class="columns">
                 <div class="column is-half">
                     <div class="field">

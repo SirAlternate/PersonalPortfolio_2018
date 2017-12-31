@@ -38,10 +38,10 @@
 
     <div id="navbarMain" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#work">
+        <a class="navbar-item page-scroll" href="#work">
           My Work
         </a>
-        <a class="navbar-item navbar-box" href="#contact">
+        <a class="navbar-item navbar-box page-scroll" href="#contact">
           Contact Me
         </a>
       </div>
@@ -54,10 +54,10 @@
         <h1 class="title" data-aos="zoom-in" data-aos-delay="400">Erik Saulnier</h1>
         <h2 class="subtitle" data-aos="fade-up" data-aos-delay="800">I'm a <span id="whoami">developer &amp; designer</span> with a strong passion for technology.</h2>
 
-        <span class="bottom-arrow" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2400">
+        <a class="bottom-arrow page-scroll" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="2200">
             Scroll Down <br />
             <i class="fa fa-angle-down" aria-hidden="true"></i>
-        </span>
+        </a>
     </div>
 </section>
 
@@ -225,7 +225,15 @@
     <h1 class="section-title">Contact Me</h1>
 
     <div class="container">
-        <form id="contact-form" class="contact-form" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault();" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+            <div id="contact-form-success" class="notification is-success">
+                <button class="delete"></button>
+                <p class="text"></p>
+            </div>
+            <div id="contact-form-danger" class="notification is-danger">
+                <button class="delete"></button>
+                <p class="text"></p>
+            </div>
             <div class="columns">
                 <div class="column is-half">
                     <div class="field">
@@ -268,6 +276,8 @@
     </div>
 </section>
 
-        <script src="js/scripts.js"></script>
+        &copy; 2018 Erik Saulnier, All Rights Reserved.
+
+<script src="js/scripts.js"></script>
     </body>
 </html>

@@ -12,18 +12,15 @@
   }
 
   .contact-form {
+    overflow: hidden;
+
+    .notification {
+      display: none;
+    }
+
     .label {
       color: #fff;
       text-transform: uppercase;
-    }
-
-    .has-icons-left,
-    .has-icons-right {
-      .icon {
-        .fa {
-          margin: 10px;
-        }
-      }
     }
 
     .button {

@@ -35,11 +35,11 @@ if (isset($_POST['g-recaptcha-response'])) {
         // Attempt to send email
         try {
             mail($toAddress, $subject, $message, "From: $fromAddress\r\nReply-to: $email");
-            var_dump(http_response_code(200));
+            echo http_response_code(200);
         } catch(Exception $e) {
-            var_dump(http_response_code(500));
+            echo http_response_code(500);
         }
     } else {
-        var_dump(http_response_code(403));
+        echo http_response_code(403);
     }
 }

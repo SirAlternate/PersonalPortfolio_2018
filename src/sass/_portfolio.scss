@@ -77,12 +77,15 @@
 
     .button {
       margin-top: 30px;
+      border: 2px solid transparent;
 
       &.is-primary {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        transition: 0.3s ease-out background-color, 0.3s ease-out color;
+        transition: 0.3s ease-out background-color,
+                    0.3s ease-out color,
+                    0.3s ease-out border-color;
 
         &:hover {
           background-color: transparent;
