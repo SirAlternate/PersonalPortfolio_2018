@@ -4,6 +4,7 @@
     "bulma": "^0.6.1",
     "bulma-tooltip": "^0.1.1",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-data": "^1.2.1",
     "gulp-include": "^2.3.1",
@@ -15,6 +16,10 @@
   "dependencies": {
     "gulp-html-beautify": "^1.0.1",
     "gulp-imagemin": "^4.0.0",
+    "gulp-prettify": "^0.5.0",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-zopfli": "^5.1.0",
     "jquery": "^3.2.1",
     "jquery-ui-bundle": "^1.12.1"
   }

@@ -1,0 +1,84 @@
+<section class="section section-portfolio" id="work">
+    <h1 class="section-title">My Work</h1>
+
+    {{#each work}}
+        <div class="portfolio-item">
+            <div class="container">
+                <div class="columns is-tablet">
+                    {{#if_even @index}}
+                        <div class="column is-5-tablet content-is-v-centered" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                            <div class="image">
+                                <img src="img/work/{{image}}" alt="{{name}}" />
+                            </div>
+                        </div>
+                        <div class="column content-is-v-centered" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                            <div class="content">
+                                <h2 class="title">{{name}}</h2>
+                                <h3 class="subtitle"><span class="tag">{{year}}</span>{{#if client}} | {{client}}{{/if}}</h3>
+                                {{#if description}}
+                                    <p class="description">{{description}}</p>
+                                {{/if}}
+                                {{#if technologies}}
+                                    <h4 class="tech-title">Technologies Used</h4>
+                                    <ul class="technologies">
+                                        {{#each technologies}}
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"><img src="img/devicons/{{ icon }}" alt="{{ title }}" /></li>
+                                        {{/each}}
+                                    </ul>
+                                {{/if}}
+                                {{#if link}}
+                                    <a class="button is-primary" href="{{ link }}" rel="noopener noreferrer" target="_blank">
+                                        <span>{{#if button-text}}{{ button-text }}{{else}}Visit Site{{/if}}</span>
+                                        <span class="icon">
+                                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                {{else}} {{#if button-text}}
+                                    <a class="button is-warning" disabled>{{ button-text }}</a>
+                                {{/if}}{{/if}}
+                            </div>
+                        </div>
+                    {{else}}
+                        <div class="column is-5-tablet content-is-v-centered is-hidden-tablet" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                            <div class="image">
+                                <img src="img/work/{{image}}" alt="{{name}}" />
+                            </div>
+                        </div>
+                        <div class="column content-is-v-centered" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                            <div class="content">
+                                <h2 class="title">{{name}}</h2>
+                                <h3 class="subtitle"><span class="tag">{{year}}</span>{{#if client}} | {{client}}{{/if}}</h3>
+                                {{#if description}}
+                                    <p class="description">{{description}}</p>
+                                {{/if}}
+                                {{#if technologies}}
+                                    <h4 class="tech-title">Technologies Used</h4>
+                                    <ul class="technologies">
+                                        {{#each technologies}}
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"><img src="img/devicons/{{ icon }}" alt="{{ title }}" /></li>
+                                        {{/each}}
+                                    </ul>
+                                {{/if}}
+                                {{#if link}}
+                                    <a class="button is-primary" href="{{ link }}"  rel="noopener noreferrer" target="_blank">
+                                        <span>{{#if button-text}}{{ button-text }}{{else}}Visit Site{{/if}}</span>
+                                        <span class="icon">
+                                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                {{else}} {{#if button-text}}
+                                    <a class="button is-warning" disabled>{{ button-text }}</a>
+                                {{/if}}{{/if}}
+                            </div>
+                        </div>
+                        <div class="column is-5-tablet content-is-v-centered is-hidden-mobile" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                            <div class="image">
+                                <img src="img/work/{{image}}" alt="{{name}}" />
+                            </div>
+                        </div>
+                    {{/if_even}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>

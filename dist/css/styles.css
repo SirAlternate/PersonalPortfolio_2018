@@ -1,6 +1,5 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:500,700|Open+Sans:400,400i,600");
 /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+@import url(../../vendor/jvectormap/jquery-jvectormap-2.0.3.css);
 html,
 body,
 p,
@@ -5324,12 +5323,16 @@ h4 {
 .navbar.is-transparent {
   background-color: transparent; }
   .navbar.is-transparent .navbar-brand img {
-    height: 70px;
-    width: 70px; }
+    height: 70px; }
     @media screen and (max-width: 768px) {
       .navbar.is-transparent .navbar-brand img {
-        height: 50px;
-        width: 50px; } }
+        height: 50px; } }
+  @media screen and (max-width: 768px) {
+    .navbar.is-transparent .navbar-brand .navbar-burger {
+      padding: 25px 0; } }
+  @media screen and (min-width: 769px), print {
+    .navbar.is-transparent .navbar-brand .navbar-burger {
+      padding: 35px 0; } }
   .navbar.is-transparent .navbar-menu .navbar-item {
     margin: 10px 30px 10px 0;
     padding: 0.5rem 0.7rem;
@@ -5369,26 +5372,28 @@ h4 {
   .container {
     padding: 0 15px; } }
 
-.section-title {
-  padding: 80px 0 20px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 2.6em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
-  .section-title:after {
-    display: block;
-    width: 100px;
-    margin: 8px auto 0;
-    border-bottom: 4px solid #209cee;
-    content: ' '; }
-  @media screen and (min-width: 769px), print {
-    .section-title {
-      font-size: 2em; } }
-  @media screen and (max-width: 768px) {
-    .section-title {
-      padding: 60px 0 0;
-      font-size: 1.8em; } }
+.section {
+  padding: 0 0 80px; }
+  .section .section-title {
+    padding: 80px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.6em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+    .section .section-title:after {
+      display: block;
+      width: 100px;
+      margin: 8px auto 0;
+      border-bottom: 4px solid #209cee;
+      content: ' '; }
+    @media screen and (min-width: 769px), print {
+      .section .section-title {
+        font-size: 2em; } }
+    @media screen and (max-width: 768px) {
+      .section .section-title {
+        padding: 60px 0 0;
+        font-size: 1.8em; } }
 
 .content-is-v-centered {
   display: flex;
@@ -5396,11 +5401,13 @@ h4 {
   justify-content: center; }
 
 .section-welcome {
+  position: relative;
   height: 100vh;
   background: #209cee url("../img/background.jpg") no-repeat fixed center;
   background-size: cover;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  z-index: 99; }
   .section-welcome .navbar {
     padding-top: 30px;
     position: absolute;
@@ -5411,10 +5418,13 @@ h4 {
   .section-welcome .full-height {
     height: 100%; }
   .section-welcome .pretitle {
-    margin-top: -60px;
+    margin-top: -50px;
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 0.03em; }
+    @media screen and (max-width: 768px) {
+      .section-welcome .pretitle {
+        margin-top: 0; } }
   .section-welcome .title {
     font-size: 7em;
     letter-spacing: 0.03em; }
@@ -5424,26 +5434,47 @@ h4 {
     .section-welcome .subtitle #whoami {
       background-color: black;
       padding: 0 8px 2px; }
-  .section-welcome .bottom-arrow {
+  .section-welcome .bottom {
     position: absolute;
-    bottom: 6em;
+    bottom: 5em;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .section-welcome .bottom {
+        bottom: 1em; } }
+  .section-welcome .down-arrow {
     text-transform: uppercase;
     font-weight: 600;
     color: #fff; }
-    .section-welcome .bottom-arrow .fa {
+    .section-welcome .down-arrow .fa {
       position: absolute;
       left: 0;
       right: 0;
       top: 25px;
       font-size: 4.5em; }
     @media screen and (max-width: 768px) {
-      .section-welcome .bottom-arrow {
+      .section-welcome .down-arrow {
         font-size: 0.9em; }
-        .section-welcome .bottom-arrow .fa {
+        .section-welcome .down-arrow .fa {
           font-size: 2.5em; } }
+  .section-welcome .social-icons {
+    margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .section-welcome .social-icons {
+        margin-top: 30px; } }
+    .section-welcome .social-icons li {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: 600; }
+      .section-welcome .social-icons li:last-child {
+        margin-right: 0; }
+      .section-welcome .social-icons li svg {
+        height: 30px;
+        fill: #fff;
+        transition: opacity 0.3s ease-out; }
+        .section-welcome .social-icons li svg:hover {
+          opacity: 0.7; }
   @media screen and (min-width: 769px), print {
     .section-welcome .pretitle {
       font-size: 1em; }
@@ -5461,73 +5492,99 @@ h4 {
       margin-top: 10px;
       font-size: 1.1em; } }
 
-.section-portfolio .portfolio-item {
-  padding: 60px 0;
-  text-align: center; }
-  @media screen and (min-width: 769px), print {
-    .section-portfolio .portfolio-item {
-      text-align: left; } }
-  .section-portfolio .portfolio-item:nth-of-type(even) {
-    background-color: #fafafa; }
-    @media screen and (min-width: 1024px) {
-      .section-portfolio .portfolio-item:nth-of-type(even) .image {
-        text-align: right; } }
-  .section-portfolio .portfolio-item .image {
-    position: relative;
-    max-height: 375px;
+.section-about {
+  background-color: #fafafa; }
+  .section-about .section-title {
+    margin-bottom: 40px; }
+  .section-about .tile {
+    padding-bottom: 40px; }
+    .section-about .tile:last-child {
+      padding-bottom: 0; }
+    .section-about .tile .tile-title {
+      padding-bottom: 10px;
+      font-size: 1.2em;
+      font-weight: 600; }
+  .section-about .tech-icons li {
+    display: inline-block;
+    vertical-align: top;
+    height: 45px;
+    margin-right: 15px;
+    margin-bottom: 15px; }
+    .section-about .tech-icons li img {
+      height: 100%; }
+  .section-about .resume {
+    padding-top: 20px; }
+  .section-about .portrait {
+    height: 200px; }
+
+.section-portfolio {
+  padding-bottom: 0; }
+  .section-portfolio .portfolio-item {
+    padding: 60px 0;
     text-align: center; }
     @media screen and (min-width: 769px), print {
-      .section-portfolio .portfolio-item .image {
+      .section-portfolio .portfolio-item {
         text-align: left; } }
-    .section-portfolio .portfolio-item .image img {
+    .section-portfolio .portfolio-item:nth-of-type(even) {
+      background-color: #fafafa; }
+      @media screen and (min-width: 1024px) {
+        .section-portfolio .portfolio-item:nth-of-type(even) .image {
+          text-align: right; } }
+    .section-portfolio .portfolio-item .image {
+      position: relative;
       max-height: 375px;
-      width: auto;
-      height: auto; }
-  .section-portfolio .portfolio-item .title {
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    font-weight: 700; }
-  .section-portfolio .portfolio-item .subtitle {
-    margin-bottom: 15px;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #209cee; }
-    .section-portfolio .portfolio-item .subtitle .tag {
-      background-color: #209cee;
-      font-weight: 600;
-      color: #fff; }
-  .section-portfolio .portfolio-item .description {
-    margin-bottom: 20px; }
-  .section-portfolio .portfolio-item .tech-title {
-    margin-top: 5px;
-    font-size: 1em;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .section-portfolio .portfolio-item .technologies {
-    margin-top: 15px; }
-    .section-portfolio .portfolio-item .technologies li {
-      display: inline-block;
-      vertical-align: top;
-      height: 45px;
-      margin-right: 15px; }
-      .section-portfolio .portfolio-item .technologies li img {
-        height: 100%; }
-  .section-portfolio .portfolio-item .button {
-    margin-top: 30px;
-    border: 2px solid transparent; }
-    .section-portfolio .portfolio-item .button.is-primary {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      transition: 0.3s ease-out background-color, 0.3s ease-out color, 0.3s ease-out border-color; }
-      .section-portfolio .portfolio-item .button.is-primary:hover {
-        background-color: transparent;
-        color: #209cee;
-        border: 2px solid #209cee; }
+      text-align: center; }
+      @media screen and (min-width: 769px), print {
+        .section-portfolio .portfolio-item .image {
+          text-align: left; } }
+      .section-portfolio .portfolio-item .image img {
+        max-height: 375px;
+        width: auto;
+        height: auto; }
+    .section-portfolio .portfolio-item .title {
+      margin-bottom: 5px;
+      font-size: 1.5em;
+      font-weight: 700; }
+    .section-portfolio .portfolio-item .subtitle {
+      margin-bottom: 15px;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #209cee; }
+      .section-portfolio .portfolio-item .subtitle .tag {
+        background-color: #209cee;
+        font-weight: 600;
+        color: #fff; }
+    .section-portfolio .portfolio-item .description {
+      margin-bottom: 20px; }
+    .section-portfolio .portfolio-item .tech-title {
+      margin-top: 5px;
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .section-portfolio .portfolio-item .technologies {
+      margin-top: 15px; }
+      .section-portfolio .portfolio-item .technologies li {
+        display: inline-block;
+        vertical-align: top;
+        height: 45px;
+        margin-right: 15px; }
+        .section-portfolio .portfolio-item .technologies li img {
+          height: 100%; }
+    .section-portfolio .portfolio-item .button {
+      margin-top: 30px;
+      border: 2px solid transparent; }
+      .section-portfolio .portfolio-item .button.is-primary {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        transition: 0.3s ease-out background-color, 0.3s ease-out color, 0.3s ease-out border-color; }
+        .section-portfolio .portfolio-item .button.is-primary:hover {
+          background-color: transparent;
+          color: #209cee;
+          border: 2px solid #209cee; }
 
 .section-contact {
-  background-color: #209cee;
-  padding: 0 0 80px; }
+  background-color: #209cee; }
   .section-contact .section-title {
     color: #fff;
     margin-bottom: 40px; }
@@ -5542,3 +5599,10 @@ h4 {
       text-transform: uppercase; }
     .section-contact .contact-form .button {
       margin-top: 20px; }
+  .section-contact .grecaptcha-badge {
+    bottom: 3px !important; }
+
+.footer {
+  padding: 15px 0;
+  color: #fff;
+  background-color: #242424; }

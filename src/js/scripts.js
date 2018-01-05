@@ -1,22 +1,25 @@
-//=require aos/dist/aos.js
-//=require jquery/dist/jquery.min.js
-//=require jquery-ui-bundle/jquery-ui.js
+//=require aos/aos.js
+//=require jquery/jquery.js
+//=require jquery-ui/jquery-ui.js
+//=require jvectormap/jquery-jvectormap-2.0.3.min.js
+//=require jvectormap/jquery-jvectormap-world-mill.js
 
 $(document).ready(function() {
   // Initialize animate on scroll
   AOS.init({
     easing: 'ease-out-back',
-    duration: 800
+    duration: 800,
+    once: true
   });
 
   // Initialize scroll arrow shake and start interval
   const navlink = $('.navbar').find('a').attr('href');
-  $('.bottom-arrow').attr('href', navlink);
+  $('.down-arrow').attr('href', navlink);
   function arrowLoop() {
-    $('.bottom-arrow .fa').animate({'top': '40'}, {
+    $('.down-arrow .fa').animate({'top': '40'}, {
       duration: 1200,
       complete: function() {
-        $('.bottom-arrow .fa').animate({'top': '25'}, {
+        $('.down-arrow .fa').animate({'top': '25'}, {
           duration: 1200,
           complete: arrowLoop
         });
@@ -46,6 +49,47 @@ $(document).ready(function() {
   // Notification close handling
   $('.notification .delete').click(function(e) {
     $(e.target).parent().hide();
+  });
+
+  // Travel map
+  $('#travel-map').vectorMap({
+    map: 'world_mill',
+    zoomOnScroll: false,
+    backgroundColor: 'transparent',
+    series: {
+      regions: [{
+        values: {
+          'US': true,
+          'AU': true,
+          'KH': true,
+          'CR': true,
+          'CU': true,
+          'IT': true,
+          'NO': true,
+          'PE': true,
+          'TH': true,
+          'TZ': true,
+          'CA': true,
+          'VN': true,
+          'FR': true,
+          'AT': true,
+          'EC': true,
+          'MX': true,
+          'CH': true
+        },
+        scale: {
+          true: '#209cee'
+        }
+      }]
+    },
+    regionStyle: {
+      initial: {
+        fill: '#d0d0d0'
+      },
+      hover: {
+        fill: '#63b7ee'
+      }
+    }
   });
 });
 

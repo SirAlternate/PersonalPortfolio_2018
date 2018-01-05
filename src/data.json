@@ -1,4 +1,72 @@
 {
+    "about": {
+        "bio": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.",
+        "resume": "ErikSaulnier_Resume_09212017.pdf",
+        "skills": [{
+            "icon": "html5/html5-plain.svg",
+            "title": "HTML5"
+        }, {
+            "icon": "css3/css3-plain.svg",
+            "title": "CSS3"
+        }, {
+            "icon": "javascript/javascript-plain.svg",
+            "title": "JavaScript"
+        }, {
+            "icon": "typescript/typescript-plain.svg",
+            "title": "TypeScript"
+        }, {
+            "icon": "php/php-plain.svg",
+            "title": "PHP"
+        }, {
+            "icon": "java/java-plain.svg",
+            "title": "Java"
+        }, {
+            "icon": "python/python-plain.svg",
+            "title": "Python"
+        }, {
+            "icon": "cplusplus/cplusplus-plain.svg",
+            "title": "C++"
+        }, {
+            "icon": "csharp/csharp-plain.svg",
+            "title": "C#"
+        }],
+        "frameworks": [{
+            "icon": "laravel/laravel-plain.svg",
+            "title": "Laravel"
+        }, {
+            "icon": "angularjs/angularjs-plain.svg",
+            "title": "AngularJS / Angular2"
+        }, {
+            "icon": "react/react-original.svg",
+            "title": "React"
+        }, {
+            "icon": "ember/ember-original-wordmark.svg",
+            "title": "Ember"
+        }],
+        "tools": [{
+            "icon": "git/git-plain.svg",
+            "title": "Git"
+        }, {
+            "icon": "gulp/gulp-plain.svg",
+            "title": "Gulp"
+        }, {
+            "icon": "yarn/yarn-original.svg",
+            "title": "Yarn"
+        }, {
+            "icon": "atom/atom-original.svg",
+            "title": "Atom"
+        }, {
+            "icon": "docker/docker-plain.svg",
+            "title": "Docker"
+        }, {
+            "icon": "photoshop/photoshop-plain.svg",
+            "title": "Photoshop"
+        }, {
+            "icon": "illustrator/illustrator-plain.svg",
+            "title": "Illustrator"
+        }]
+    },
+
     "work": [{
         "name": "This Site!",
         "client": "Personal Project",
@@ -24,7 +92,7 @@
         "year": "2017",
         "description": "Designed and built an application to create a streamlined process for customers to submit, save, and share their voice recordings.",
         "image": "2017_StoryWings.jpg",
-        "link": "http://storywings.net",
+        "button-text": "Launching Early 2018",
         "technologies": [{
             "icon": "laravel/laravel-plain.svg",
             "title": "Laravel"
@@ -44,7 +112,7 @@
         "year": "2017",
         "description": "Worked with Rensselaer Polytechnic Institute's Games and Simulation Arts and Sciences department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub. The site's main goal is to encourage students and businesses to create new innovative technologies in the Capital Region.",
         "image": "2017_DigitalGamingHub.jpg",
-        "button-text": "Coming 2018",
+        "button-text": "Launching Early 2018",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"

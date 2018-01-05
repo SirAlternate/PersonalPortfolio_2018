@@ -1,20 +1,19 @@
 
-// Import Font Awesome
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-// Import fonts
-@import url("https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:500,700|Open+Sans:400,400i,600");
-
 // Import Bulma
 @import "bulma";
 
 // Import AOS
 @import "../../node_modules/aos/src/sass/aos";
 
+// Import JVectorMap
+@import '../../vendor/jvectormap/jquery-jvectormap-2.0.3.css';
+
 // Import globals
 @import "global";
 
 // Import partials
 @import "welcome";
-@import "portfolio";
+@import "about";
+@import "work";
 @import "contact";
+@import "footer";
