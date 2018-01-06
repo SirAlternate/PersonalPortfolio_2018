@@ -9,6 +9,9 @@
             "icon": "css3/css3-plain.svg",
             "title": "CSS3"
         }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
+        }, {
             "icon": "javascript/javascript-plain.svg",
             "title": "JavaScript"
         }, {
@@ -17,6 +20,9 @@
         }, {
             "icon": "php/php-plain.svg",
             "title": "PHP"
+        }, {
+            "icon": "nodejs/nodejs-original.svg",
+            "title": "Node.js"
         }, {
             "icon": "java/java-plain.svg",
             "title": "Java"
@@ -29,6 +35,12 @@
         }, {
             "icon": "csharp/csharp-plain.svg",
             "title": "C#"
+        }, {
+            "icon": "mysql/mysql-original.svg",
+            "title": "MySQL"
+        }, {
+            "icon": "mongodb/mongodb-original.svg",
+            "title": "MongoDB"
         }],
         "frameworks": [{
             "icon": "laravel/laravel-plain.svg",
@@ -90,7 +102,6 @@
         "name": "StoryWings Library",
         "client": "StoryWings",
         "year": "2017",
-        "description": "Designed and built an application to create a streamlined process for customers to submit, save, and share their voice recordings.",
         "image": "2017_StoryWings.jpg",
         "button-text": "Launching Early 2018",
         "technologies": [{
@@ -110,7 +121,7 @@
         "name": "Tech Valley Digital Gaming Hub",
         "client": "Rensselaer Polytechnic Institute",
         "year": "2017",
-        "description": "Worked with Rensselaer Polytechnic Institute's Games and Simulation Arts and Sciences department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub. The site's main goal is to encourage students and businesses to create new innovative technologies in the Capital Region.",
+        "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub. The site's main goal is to provide a central hub that encourages students and businesses in the Capital Region to create new and innovative technologies.",
         "image": "2017_DigitalGamingHub.jpg",
         "button-text": "Launching Early 2018",
         "technologies": [{
@@ -130,7 +141,7 @@
         "name": "LunatiK eSports",
         "client": "LunatiK eSports",
         "year": "2015",
-        "description": "Designed and developed a custom WordPress theme for LunatiK eSports' main website.",
+        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to change looks.",
         "image": "2015_LunatikEsports.jpg",
         "button-text": "Site Offline :(",
         "technologies": [{
@@ -150,7 +161,7 @@
         "name": "Sneaky Spanish",
         "client": "School Project",
         "year": "2015",
-        "description": "Sneaky Spanish is a Chrome Extension that allows you to learn Spanish in the context of web pages you are already reading on the web by selectively translating words and passages on the pages you view.",
+        "description": "Sneaky Spanish is a Chrome extension that allows you to learn Spanish in the context of web pages you are already reading on the web by selectively translating words on the pages you view. I served as one of the main developers for the initial development of the extension.",
         "image": "2015_SneakySpanish.jpg",
         "link": "https://chrome.google.com/webstore/detail/sneaky-spanish/fmbgmlhpadiloggofeliagghggmopgbk",
         "button-text": "View on Chrome Web Store",

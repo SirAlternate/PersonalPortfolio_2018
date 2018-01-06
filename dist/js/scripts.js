@@ -29044,7 +29044,7 @@ $(document).ready(function() {
     },
     regionStyle: {
       initial: {
-        fill: '#d0d0d0'
+        fill: '#e8e8e8'
       },
       hover: {
         fill: '#63b7ee'

@@ -5,15 +5,24 @@
     margin-bottom: 40px;
   }
 
+  .columns {
+    flex-direction: row-reverse;
+  }
+
   .tile {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
 
     &:last-child {
       padding-bottom: 0;
     }
 
+    @include desktop {
+      text-align: left;
+    }
+
     .tile-title {
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       font-size: 1.2em;
       font-weight: 600;
     }
@@ -25,7 +34,7 @@
       vertical-align: top;
       height: 45px;
       margin-right: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 35px;
 
       img {
         height: 100%;
@@ -33,8 +42,16 @@
     }
   }
 
-  .resume {
-    padding-top: 20px;
+  .button-resume {
+    margin-top: 20px;
+
+    @include desktop {
+      margin-top: 45px;
+    }
+  }
+
+  .button-contact {
+    margin-top: 40px;
   }
 
   .portrait {

@@ -127,3 +127,36 @@ h4 {
   flex-direction: column;
   justify-content: center;
 }
+
+.button {
+  color: $primary;
+  border: 2px solid $primary;
+  background-color: transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: 0.3s ease-out background-color,
+              0.3s ease-out color,
+              0.3s ease-out border-color;
+
+  &:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: $primary;
+  }
+
+  &.is-primary {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: 0.3s ease-out background-color,
+                0.3s ease-out color,
+                0.3s ease-out border-color;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+      border: 2px solid $primary;
+    }
+  }
+}

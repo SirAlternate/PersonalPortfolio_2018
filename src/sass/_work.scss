@@ -1,19 +1,36 @@
 .section-portfolio {
   padding-bottom: 0;
-  
+
   .portfolio-item {
     padding: 60px 0;
     text-align: center;
-    @include tablet {
-      text-align: left;
-    }
 
     &:nth-of-type(even) {
       background-color: #fafafa;
-      @include desktop {
-        .image {
-          text-align: right;
+
+      .columns {
+        flex-direction: row-reverse;
+        text-align: right;
+
+        @include mobile {
+          text-align: center;
         }
+      }
+
+      .image {
+        text-align: right;
+
+        @include mobile {
+          text-align: center;
+        }
+      }
+    }
+
+    .columns {
+      text-align: left;
+
+      @include mobile {
+        text-align: center;
       }
     }
 

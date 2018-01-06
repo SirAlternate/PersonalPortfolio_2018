@@ -3,19 +3,10 @@
 
     <div class="container">
         <div class="tile">
-            <p class="about-blurb">{{about.bio}}</p>
+            <p class="about-blurb">{{{about.bio}}}</p>
         </div>
-        <div class="columns">
-            <div class="column is-6">
-                <!-- <div class="tile">
-                    <img class="portrait" src="img/portrait.png" />
-                </div> -->
-                <div class="tile">
-                    <h2 class="tile-title">Places I've Traveled</h2>
-                    <div id="travel-map" style="width: 100%; height: 320px" data-aos="fade-right" data-aos-anchor-placement="center-bottom"></div>
-                </div>
-            </div>
-            <div class="column is-6">
+        <div class="columns is-multiline">
+            <div class="column is-full is-half-desktop">
                 <div class="tile">
                     <h2 class="tile-title">My Skills</h2>
                     <ul class="tech-icons">
@@ -26,37 +17,44 @@
                         {{/each}}
                     </ul>
                 </div>
-
                 <div class="tile">
                     <h2 class="tile-title">Frameworks</h2>
                     <ul class="tech-icons">
                         {{#each about.frameworks}}
-                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}" data-aos="fade-left" data-aos-delay="{{delay_inc @index}}" data-aos-anchor-placement="center-bottom">
-                                <img src="img/devicons/{{ icon }}" alt="{{ title }}" />
-                            </li>
+                        <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}" data-aos="fade-left" data-aos-delay="{{delay_inc @index}}" data-aos-anchor-placement="center-bottom">
+                            <img src="img/devicons/{{ icon }}" alt="{{ title }}" />
+                        </li>
                         {{/each}}
                     </ul>
                 </div>
-
                 <div class="tile">
                     <h2 class="tile-title">Tools I Use</h2>
                     <ul class="tech-icons">
                         {{#each about.tools}}
-                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"  data-aos="fade-left" data-aos-delay="{{delay_inc @index}}" data-aos-anchor-placement="center-bottom">
-                                <img src="img/devicons/{{ icon }}" alt="{{ title }}" />
-                            </li>
+                        <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"  data-aos="fade-left" data-aos-delay="{{delay_inc @index}}" data-aos-anchor-placement="center-bottom">
+                            <img src="img/devicons/{{ icon }}" alt="{{ title }}" />
+                        </li>
                         {{/each}}
                     </ul>
                 </div>
             </div>
+            <div class="column is-full is-half-desktop">
+                <div class="tile">
+                    <h2 class="tile-title">Places I've Traveled</h2>
+                    <div id="travel-map" style="width: 100%; height: 320px" data-aos="fade-right" data-aos-anchor-placement="center-bottom"></div>
+                </div>
+                <div class="tile has-text-centered" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                    <a class="button button-resume is-primary is-medium" href="pdf/{{ about.resume }}">
+                        <span>View My Resume</span>
+                        <span class="icon">
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="resume has-text-centered" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <a class="button is-primary is-medium" href="pdf/{{ about.resume }}">
-                <span>View My Resume</span>
-                <span class="icon">
-                    <i class="fa fa-file" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
+        <!-- <div class="has-text-centered" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <a class="button button-contact is-primary is-large page-scroll" href="#contact">Contact Me</a>
+        </div> -->
     </div>
 </section>

@@ -89,8 +89,10 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('templates', () => {
+    const data = require('./src/data.json');
+    
     gulp.src('./src/templates/index.handlebars')
-        .pipe(handlebars(require('./src/data.json'), templateOptions))
+        .pipe(handlebars(data, templateOptions))
         .pipe(inject(gulp.src([
             './dist/css/styles-min.css',
             './dist/js/scripts-min.js',
@@ -108,7 +110,7 @@ gulp.task('templates', () => {
 
 gulp.task('default', ['scripts', 'styles', 'templates']);
 
-gulp.task('watch', () => {
+gulp.task('watch', ['default'], () => {
     gulp.watch('./src/js/**/*.js', ['scripts']);
     gulp.watch('./src/sass/**/*.scss', ['styles']);
     gulp.watch('./src/templates/**/*.handlebars', ['templates']);
