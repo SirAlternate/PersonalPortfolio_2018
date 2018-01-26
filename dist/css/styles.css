@@ -5520,8 +5520,10 @@ h4 {
     margin-bottom: 40px; }
   .section-about .columns {
     flex-direction: row-reverse; }
+  .section-about .about {
+    padding-bottom: 60px; }
   .section-about .tile {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center; }
     .section-about .tile:last-child {
       padding-bottom: 0; }
@@ -5544,7 +5546,7 @@ h4 {
     margin-top: 20px; }
     @media screen and (min-width: 1024px) {
       .section-about .button-resume {
-        margin-top: 45px; } }
+        margin-top: 35px; } }
   .section-about .button-contact {
     margin-top: 40px; }
   .section-about .portrait {
@@ -5643,7 +5645,8 @@ h4 {
     .section-contact .contact-form .button {
       margin-top: 20px; }
   .section-contact .grecaptcha-badge {
-    bottom: 3px !important; }
+    bottom: 0px !important;
+    box-shadow: none !important; }
 
 .footer {
   padding: 15px 0;

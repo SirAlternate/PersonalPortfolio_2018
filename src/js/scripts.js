@@ -87,7 +87,7 @@ $(document).ready(function() {
         fill: '#e8e8e8'
       },
       hover: {
-        fill: '#63b7ee'
+        fill: '#87c9f4'
       }
     }
   });

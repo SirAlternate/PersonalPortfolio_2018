@@ -9,8 +9,12 @@
     flex-direction: row-reverse;
   }
 
+  .about {
+    padding-bottom: 60px;
+  }
+
   .tile {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center;
 
     &:last-child {
@@ -46,7 +50,7 @@
     margin-top: 20px;
 
     @include desktop {
-      margin-top: 45px;
+      margin-top: 35px;
     }
   }
 

@@ -1,6 +1,6 @@
 {
     "about": {
-        "bio": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.",
+        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. </br></br>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.",
         "resume": "ErikSaulnier_Resume_09212017.pdf",
         "skills": [{
             "icon": "html5/html5-plain.svg",
@@ -56,6 +56,9 @@
             "title": "Ember"
         }],
         "tools": [{
+            "icon": "atom/atom-original.svg",
+            "title": "Atom"
+        }, {
             "icon": "git/git-plain.svg",
             "title": "Git"
         }, {
@@ -64,9 +67,6 @@
         }, {
             "icon": "yarn/yarn-original.svg",
             "title": "Yarn"
-        }, {
-            "icon": "atom/atom-original.svg",
-            "title": "Atom"
         }, {
             "icon": "docker/docker-plain.svg",
             "title": "Docker"
@@ -83,8 +83,8 @@
         "name": "This Site!",
         "client": "Personal Project",
         "year": "2018",
-        "image": "2018_PersonalSite.jpg",
         "button-text": "You're already here",
+        "image": "2018_PersonalSite.jpg",
         "technologies": [{
             "icon": "handlebars/handlebars-original.svg",
             "title": "Handlebars"
@@ -102,8 +102,9 @@
         "name": "StoryWings Library",
         "client": "StoryWings",
         "year": "2017",
-        "image": "2017_StoryWings.jpg",
+        "description": "Designed and developed the initial version of the StoryWings Library, an online service which allows users to record and share stories with family and friends through a streamlined online platform.",
         "button-text": "Launching Early 2018",
+        "image": "2017_StoryWings.jpg",
         "technologies": [{
             "icon": "laravel/laravel-plain.svg",
             "title": "Laravel"
@@ -121,9 +122,9 @@
         "name": "Tech Valley Digital Gaming Hub",
         "client": "Rensselaer Polytechnic Institute",
         "year": "2017",
-        "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub. The site's main goal is to provide a central hub that encourages students and businesses in the Capital Region to create new and innovative technologies.",
-        "image": "2017_DigitalGamingHub.jpg",
+        "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub.",
         "button-text": "Launching Early 2018",
+        "image": "2017_DigitalGamingHub.jpg",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"
@@ -141,9 +142,9 @@
         "name": "LunatiK eSports",
         "client": "LunatiK eSports",
         "year": "2015",
-        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to change looks.",
-        "image": "2015_LunatikEsports.jpg",
+        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to switch direction.",
         "button-text": "Site Offline :(",
+        "image": "2015_LunatikEsports.jpg",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"
@@ -162,9 +163,9 @@
         "client": "School Project",
         "year": "2015",
         "description": "Sneaky Spanish is a Chrome extension that allows you to learn Spanish in the context of web pages you are already reading on the web by selectively translating words on the pages you view. I served as one of the main developers for the initial development of the extension.",
-        "image": "2015_SneakySpanish.jpg",
         "link": "https://chrome.google.com/webstore/detail/sneaky-spanish/fmbgmlhpadiloggofeliagghggmopgbk",
         "button-text": "View on Chrome Web Store",
+        "image": "2015_SneakySpanish.jpg",
         "technologies": [{
             "icon": "chrome/chrome-original.svg",
             "title": "Chrome"

@@ -22,19 +22,19 @@
                                     <h4 class="tech-title">Technologies Used</h4>
                                     <ul class="technologies">
                                         {{#each technologies}}
-                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"><img src="img/devicons/{{ icon }}" alt="{{ title }}" /></li>
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}"><img src="img/devicons/{{icon}}" alt="{{title}}" /></li>
                                         {{/each}}
                                     </ul>
                                 {{/if}}
                                 {{#if link}}
-                                    <a class="button is-primary" href="{{ link }}" rel="noopener noreferrer" target="_blank">
+                                    <a class="button is-primary" href="{{link}}" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'click', { event_category: 'portfolio', event_label: '{{name}}' })">
                                         <span>{{#if button-text}}{{ button-text }}{{else}}Visit Site{{/if}}</span>
                                         <span class="icon">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                 {{else}} {{#if button-text}}
-                                    <a class="button is-warning" disabled>{{ button-text }}</a>
+                                    <a class="button is-warning" disabled>{{button-text}}</a>
                                 {{/if}}{{/if}}
                             </div>
                         </div>
@@ -55,19 +55,19 @@
                                     <h4 class="tech-title">Technologies Used</h4>
                                     <ul class="technologies">
                                         {{#each technologies}}
-                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{ title }}"><img src="img/devicons/{{ icon }}" alt="{{ title }}" /></li>
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}"><img src="img/devicons/{{icon}}" alt="{{title}}" /></li>
                                         {{/each}}
                                     </ul>
                                 {{/if}}
                                 {{#if link}}
-                                    <a class="button is-primary" href="{{ link }}"  rel="noopener noreferrer" target="_blank">
-                                        <span>{{#if button-text}}{{ button-text }}{{else}}Visit Site{{/if}}</span>
+                                    <a class="button is-primary" href="{{link}}"  rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'click', { event_category: 'portfolio', event_label: '{{name}}' })">
+                                        <span>{{#if button-text}}{{button-text}}{{else}}Visit Site{{/if}}</span>
                                         <span class="icon">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                 {{else}} {{#if button-text}}
-                                    <a class="button is-warning" disabled>{{ button-text }}</a>
+                                    <a class="button is-warning" disabled>{{button-text}}</a>
                                 {{/if}}{{/if}}
                             </div>
                         </div>
