@@ -26,7 +26,6 @@
 <meta name="twitter:image:src" content="https://eriksaulnier.com/img/share.jpg">
 
 <!-- Favicons -->
-<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -40,8 +39,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:500,700|Open+Sans:400,400i,600" />
 
 <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31436790-5"></script>
 <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','UA-31436790-4','auto');ga('send','pageview')
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-31436790-5');
+
+  setTimeout("gtag('event', 'read', { event_label: '30 seconds on page' })", 30000);
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
