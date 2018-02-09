@@ -54,6 +54,12 @@
         }, {
             "icon": "ember/ember-original-wordmark.svg",
             "title": "Ember"
+        }, {
+            "icon": "ionic/ionic-original.svg",
+            "title": "Ionic"
+        }, {
+            "icon": "xamarin/xamarin-original.svg",
+            "title": "Xamarin"
         }],
         "tools": [{
             "icon": "atom/atom-original.svg",
