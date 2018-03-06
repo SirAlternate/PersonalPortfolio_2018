@@ -22,7 +22,9 @@
                                     <h4 class="tech-title">Technologies Used</h4>
                                     <ul class="technologies">
                                         {{#each technologies}}
-                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}"><img src="img/devicons/{{icon}}" alt="{{title}}" /></li>
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="{{delay_inc @index}}">
+																							<img src="img/devicons/{{icon}}" alt="{{title}}" />
+																						</li>
                                         {{/each}}
                                     </ul>
                                 {{/if}}
@@ -55,7 +57,9 @@
                                     <h4 class="tech-title">Technologies Used</h4>
                                     <ul class="technologies">
                                         {{#each technologies}}
-                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}"><img src="img/devicons/{{icon}}" alt="{{title}}" /></li>
+                                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-delay="{{delay_inc @index}}">
+																							<img src="img/devicons/{{icon}}" alt="{{title}}" />
+																						</li>
                                         {{/each}}
                                     </ul>
                                 {{/if}}
