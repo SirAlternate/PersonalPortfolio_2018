@@ -1,6 +1,7 @@
 {
     "about": {
-        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. </br></br>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.",
+        "bio": "I’m a web developer and designer from <b>upstate New York</b> who loves turning ideas into code. No matter the project I am always passionate about the work I create and am always looking for new frameworks and technologies to my toolbelt. In addition to creating websites I also enjoy traveling and exploring the world.<br><br>I’m currently a Junior at <a href='https://www.rpi.edu' target='_blank' rel='noopener noreferrer'>Rensselaer Polytechnic Institute</a> studying to get my Bachelors degree in <b>Information Technology and Web Science</b>. When I’m not in classes I am also a part-time developer at <a href='https://www.troyweb.com' target='_blank' rel='noopener noreferrer'>Troy Web Consulting</a> in downtown Troy, New York and do the occasional freelance project when I have the timee.",
+				"portrait": "erik_portrait.jpg",
         "resume": "ErikSaulnier_Resume_09212017.pdf",
         "skills": [{
             "icon": "html5/html5-plain.svg",
@@ -21,9 +22,6 @@
             "icon": "php/php-plain.svg",
             "title": "PHP"
         }, {
-            "icon": "nodejs/nodejs-original.svg",
-            "title": "Node.js"
-        }, {
             "icon": "java/java-plain.svg",
             "title": "Java"
         }, {
@@ -36,6 +34,9 @@
             "icon": "csharp/csharp-plain.svg",
             "title": "C#"
         }, {
+            "icon": "handlebars/handlebars-original.svg",
+            "title": "Handlebars"
+        }, {
             "icon": "mysql/mysql-original.svg",
             "title": "MySQL"
         }, {
@@ -43,17 +44,17 @@
             "title": "MongoDB"
         }],
         "frameworks": [{
+            "icon": "bootstrap/bootstrap-plain.svg",
+            "title": "Bootstrap"
+        }, {
+            "icon": "bulma/bulma-original.svg",
+            "title": "Bulma"
+        }, {
             "icon": "laravel/laravel-plain.svg",
             "title": "Laravel"
         }, {
             "icon": "angularjs/angularjs-plain.svg",
             "title": "AngularJS / Angular2"
-        }, {
-            "icon": "react/react-original.svg",
-            "title": "React"
-        }, {
-            "icon": "ember/ember-original-wordmark.svg",
-            "title": "Ember"
         }, {
             "icon": "ionic/ionic-original.svg",
             "title": "Ionic"
@@ -108,8 +109,8 @@
         "name": "StoryWings Library",
         "client": "StoryWings",
         "year": "2017",
-        "description": "Designed and developed the initial version of the StoryWings Library, an online service which allows users to record and share stories with family and friends through a streamlined online platform.",
-        "button-text": "Launching Early 2018",
+        "description": "Designed and developed the beta version of StoryWings, an online service which allows users to record and share stories with family and friends through a streamlined online platform.",
+        "button-text": "Launching March 2018",
         "image": "2017_StoryWings.jpg",
         "technologies": [{
             "icon": "laravel/laravel-plain.svg",
@@ -123,34 +124,17 @@
         }, {
             "icon": "sass/sass-original.svg",
             "title": "Sass"
+        }, {
+            "icon": "amazonwebservices/amazonwebservices-original.svg",
+            "title": "Amazon Web Services"
         }]
     }, {
         "name": "Tech Valley Digital Gaming Hub",
         "client": "Rensselaer Polytechnic Institute",
         "year": "2017",
-        "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub.",
+        "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub website. The Digital Gaming Hub's main goal is to bring together higher education, industry, and community partners to support and grow the digital gaming ecosystem centered on the Tech Valley and Capital District regions in New York State.",
         "button-text": "Launching Early 2018",
         "image": "2017_DigitalGamingHub.jpg",
-        "technologies": [{
-            "icon": "wordpress/wordpress-plain.svg",
-            "title": "WordPress"
-        }, {
-            "icon": "javascript/javascript-original.svg",
-            "title": "JavaScript"
-        }, {
-            "icon": "bootstrap/bootstrap-plain.svg",
-            "title": "Bootstrap 3"
-        }, {
-            "icon": "sass/sass-original.svg",
-            "title": "Sass"
-        }]
-    }, {
-        "name": "LunatiK eSports",
-        "client": "LunatiK eSports",
-        "year": "2015",
-        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to switch direction.",
-        "button-text": "Site Offline :(",
-        "image": "2015_LunatikEsports.jpg",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
             "title": "WordPress"
@@ -178,6 +162,25 @@
         }, {
             "icon": "javascript/javascript-original.svg",
             "title": "JavaScript"
+        }]
+    }, {
+        "name": "LunatiK eSports",
+        "client": "LunatiK eSports",
+        "year": "2015",
+        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to switch directions.",
+        "image": "2015_LunatikEsports.jpg",
+        "technologies": [{
+            "icon": "wordpress/wordpress-plain.svg",
+            "title": "WordPress"
+        }, {
+            "icon": "javascript/javascript-original.svg",
+            "title": "JavaScript"
+        }, {
+            "icon": "bootstrap/bootstrap-plain.svg",
+            "title": "Bootstrap 3"
+        }, {
+            "icon": "sass/sass-original.svg",
+            "title": "Sass"
         }]
     }]
 }

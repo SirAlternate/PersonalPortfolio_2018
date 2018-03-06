@@ -2,56 +2,69 @@
     <h1 class="section-title">About Me</h1>
 
     <div class="container">
-        <!-- <div class="about">
-            <p class="about-blurb">{{{about.bio}}}</p>
-        </div> -->
-        <div class="columns is-multiline">
-            <div class="column is-full is-half-desktop">
-                <div class="tile">
-                    <h2 class="tile-title">My Skills</h2>
-                    <ul class="tech-icons" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
-                        {{#each about.skills}}
-                            <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}">
-                                <img src="img/devicons/{{icon}}" alt="{{title}}" />
-                            </li>
-                        {{/each}}
-                    </ul>
-                </div>
-                <div class="tile">
-                    <h2 class="tile-title">Frameworks</h2>
-                    <ul class="tech-icons" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
-                        {{#each about.frameworks}}
-                        <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}">
-                            <img src="img/devicons/{{icon}}" alt="{{title}}" />
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-                <div class="tile">
-                    <h2 class="tile-title">Tools I Use</h2>
-                    <ul class="tech-icons" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
-                        {{#each about.tools}}
-                        <li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}">
-                            <img src="img/devicons/{{icon}}" alt="{{title}}" />
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-            <div class="column is-full is-half-desktop">
-                <div class="tile">
-                    <h2 class="tile-title">Places I've Traveled</h2>
-                    <div id="travel-map" style="width: 100%; height: 320px" data-aos="fade-right" data-aos-anchor-placement="center-bottom"></div>
-                </div>
-                <div class="tile has-text-centered" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-                    <a class="button button-resume is-primary is-medium" href="pdf/{{about.resume}}" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'click', { event_label: 'Resume' })">
-                        <span>View My Resume</span>
-                        <span class="icon">
-                            <i class="fa fa-file" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
+				<div class="columns is-multiline border-bottom">
+						<div class="column is-full is-one-third-tablet">
+								<div class="tile" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+										<img class="portrait" src="img/{{about.portrait}}" alt="Me"/>
+								</div>
+						</div>
+						<div class="column is-full is-two-thirds-tablet column-v-centered">
+								<div class="tile" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+										<p class="about-blurb">{{{about.bio}}}</p>
+								</div>
+						</div>
+				</div>
+				<div class="columns columns-reverse is-multiline">
+						<div class="column is-full is-half-desktop">
+								<div class="tile">
+										<h2 class="tile-title">My Skills</h2>
+										<ul class="tech-icons">
+												{{#each about.skills}}
+														<li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="{{delay_inc @index}}">
+																<img src="img/devicons/{{icon}}" alt="{{title}}" />
+														</li>
+												{{/each}}
+										</ul>
+								</div>
+								<div class="tile">
+										<h2 class="tile-title">Frameworks</h2>
+										<ul class="tech-icons">
+												{{#each about.frameworks}}
+												<li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="{{delay_inc @index}}">
+														<img src="img/devicons/{{icon}}" alt="{{title}}" />
+												</li>
+												{{/each}}
+										</ul>
+								</div>
+								<div class="tile">
+										<h2 class="tile-title">Tools I Use</h2>
+										<ul class="tech-icons">
+												{{#each about.tools}}
+												<li class="tooltip is-tooltip-bottom" data-tooltip="{{title}}" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="{{delay_inc @index}}">
+														<img src="img/devicons/{{icon}}" alt="{{title}}" />
+												</li>
+												{{/each}}
+										</ul>
+								</div>
+						</div>
+						<div class="column is-full is-half-desktop">
+								<div class="tile">
+										<h2 class="tile-title">Places I've Traveled</h2>
+										<div id="travel-map" style="width: 100%; height: 320px" data-aos="fade-right" data-aos-anchor-placement="center-bottom"></div>
+								</div>
+								<div class="tile has-text-centered" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+										<a class="button button-resume is-primary is-medium" href="pdf/{{about.resume}}" rel="noopener noreferrer" target="_blank" onclick="gtag('event', 'click', { event_label: 'Resume' })">
+												<span>View My Resume</span>
+												<span class="icon">
+														<i class="fa fa-file" aria-hidden="true"></i>
+												</span>
+										</a>
+								</div>
+						</div>
+				</div>
     </div>
+</section>
+
+<section class="section section-about">
+
 </section>

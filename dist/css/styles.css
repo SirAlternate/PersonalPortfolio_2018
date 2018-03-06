@@ -5518,10 +5518,13 @@ h4 {
   background-color: #fafafa; }
   .section-about .section-title {
     margin-bottom: 40px; }
-  .section-about .columns {
+  .section-about .columns-reverse {
     flex-direction: row-reverse; }
-  .section-about .about {
-    padding-bottom: 60px; }
+  .section-about .column-v-centered {
+    margin: auto 0; }
+  .section-about .border-bottom {
+    margin-bottom: 70px;
+    border-bottom: 2px solid lightgrey; }
   .section-about .tile {
     padding-bottom: 20px;
     text-align: center; }
@@ -5534,6 +5537,25 @@ h4 {
       padding-bottom: 20px;
       font-size: 1.2em;
       font-weight: 600; }
+  .section-about .portrait {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 375px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding-bottom: 60px; }
+    @media screen and (min-width: 1024px) {
+      .section-about .portrait {
+        width: 60%; } }
+  .section-about .about-blurb {
+    padding-bottom: 80px;
+    text-align: left;
+    font-size: 1em; }
+    @media screen and (min-width: 1024px) {
+      .section-about .about-blurb {
+        padding-bottom: 100px;
+        font-size: 1.1em; } }
   .section-about .tech-icons li {
     display: inline-block;
     vertical-align: top;
@@ -5549,8 +5571,6 @@ h4 {
         margin-top: 35px; } }
   .section-about .button-contact {
     margin-top: 40px; }
-  .section-about .portrait {
-    height: 200px; }
 
 .section-portfolio {
   padding-bottom: 0; }
