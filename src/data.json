@@ -1,8 +1,8 @@
 {
     "about": {
-        "bio": "I’m a web developer and designer from <b>upstate New York</b> who loves turning ideas into code. No matter the project I am always passionate about the work I create and am always looking for new frameworks and technologies to my toolbelt. In addition to creating websites I also enjoy traveling and exploring the world.<br><br>I’m currently a Junior at <a href='https://www.rpi.edu' target='_blank' rel='noopener noreferrer'>Rensselaer Polytechnic Institute</a> studying to get my Bachelors degree in <b>Information Technology and Web Science</b>. When I’m not in classes I am also a part-time developer at <a href='https://www.troyweb.com' target='_blank' rel='noopener noreferrer'>Troy Web Consulting</a> in downtown Troy, New York and do the occasional freelance project when I have the timee.",
+        "bio": "I’m a web developer and designer from <b>upstate New York</b> who loves turning ideas into code. No matter the project I am always passionate about the work I create and am always looking for new frameworks and technologies to add to my toolbelt. In addition to creating websites I also enjoy traveling and exploring the world and am always looking for excuses for travel more.<br><br>I’m currently a Junior at <a href='https://www.rpi.edu' target='_blank' rel='noopener noreferrer'>Rensselaer Polytechnic Institute</a> studying to get my Bachelors degree in <b>Information Technology and Web Science</b> with a concentration in Entrepreneurship. When I’m not in classes I am also a part-time developer at <a href='https://www.troyweb.com' target='_blank' rel='noopener noreferrer'>Troy Web Consulting</a> in downtown Troy, New York and do the occasional freelance project when I have the time.",
 				"portrait": "erik_portrait.jpg",
-        "resume": "ErikSaulnier_Resume_09212017.pdf",
+        "resume": "ErikSaulnier_Resume_03062018.pdf",
         "skills": [{
             "icon": "html5/html5-plain.svg",
             "title": "HTML5"
@@ -109,7 +109,8 @@
         "name": "StoryWings Library",
         "client": "StoryWings",
         "year": "2017",
-        "description": "Designed and developed the beta version of StoryWings, an online service which allows users to record and share stories with family and friends through a streamlined online platform.",
+        "description": "Designed and developed the beta version of StoryWings, an online streamlined platform which allows users to record and share stories with family and friends through generations.",
+				"link": "http://storywings.net",
         "button-text": "Launching March 2018",
         "image": "2017_StoryWings.jpg",
         "technologies": [{
@@ -167,7 +168,7 @@
         "name": "LunatiK eSports",
         "client": "LunatiK eSports",
         "year": "2015",
-        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for a year before they decided to switch directions.",
+        "description": "Worked with LunatiK eSports to design and develop a custom WordPress theme for their main website. The site served as their main website for about a year before they decided to go a different direction with it.",
         "image": "2015_LunatikEsports.jpg",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
