@@ -1,7 +1,7 @@
 {
     "about": {
         "bio": "I’m a web developer and designer from <b>upstate New York</b> who loves turning ideas into code. No matter the project I am always passionate about the work I create and am always looking for new frameworks and technologies to add to my toolbelt. In addition to creating websites I also enjoy traveling and exploring the world and am always looking for excuses for travel more.<br><br>I’m currently a Junior at <a href='https://www.rpi.edu' target='_blank' rel='noopener noreferrer'>Rensselaer Polytechnic Institute</a> studying to get my Bachelors degree in <b>Information Technology and Web Science</b> with a concentration in Entrepreneurship. When I’m not in classes I am also a part-time developer at <a href='https://www.troyweb.com' target='_blank' rel='noopener noreferrer'>Troy Web Consulting</a> in downtown Troy, New York and do the occasional freelance project when I have the time.",
-				"portrait": "erik_portrait.jpg",
+        "portrait": "erik_portrait.jpg",
         "resume": "ErikSaulnier_Resume_03062018.pdf",
         "skills": [{
             "icon": "html5/html5-plain.svg",
@@ -110,8 +110,8 @@
         "client": "StoryWings",
         "year": "2017",
         "description": "Designed and developed the beta version of StoryWings, an online streamlined platform which allows users to record and share stories with family and friends through generations.",
-				"link": "http://storywings.net",
-        "button-text": "Launching March 2018",
+        "link": "http://storywings.net",
+        "button-text": "Launching April 2018",
         "image": "2017_StoryWings.jpg",
         "technologies": [{
             "icon": "laravel/laravel-plain.svg",
@@ -134,7 +134,7 @@
         "client": "Rensselaer Polytechnic Institute",
         "year": "2017",
         "description": "Worked with Rensselaer Polytechnic Institute's GSAS department to design/develop a custom WordPress theme and plugins for the school's Digital Gaming Hub website. The Digital Gaming Hub's main goal is to bring together higher education, industry, and community partners to support and grow the digital gaming ecosystem centered on the Tech Valley and Capital District regions in New York State.",
-        "button-text": "Launching Early 2018",
+        "link": "https://gamehub.rpi.edu",
         "image": "2017_DigitalGamingHub.jpg",
         "technologies": [{
             "icon": "wordpress/wordpress-plain.svg",
