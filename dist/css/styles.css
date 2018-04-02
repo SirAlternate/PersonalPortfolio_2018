@@ -5422,10 +5422,15 @@ h4 {
       color: #209cee;
       border: 2px solid #209cee; }
 
+.footer {
+  padding: 15px 0;
+  color: #fff;
+  background-color: #242424; }
+
 .section-welcome {
   position: relative;
   height: 100vh;
-  background: #209cee url("../img/background.jpg") no-repeat fixed center;
+  background: #242424 url("../img/background.jpg") no-repeat fixed center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -5667,8 +5672,3 @@ h4 {
   .section-contact .grecaptcha-badge {
     bottom: 0px !important;
     box-shadow: none !important; }
-
-.footer {
-  padding: 15px 0;
-  color: #fff;
-  background-color: #242424; }

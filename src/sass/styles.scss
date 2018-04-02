@@ -1,19 +1,3 @@
-
-// Import Bulma
-@import "bulma";
-
-// Import AOS
-@import "../../node_modules/aos/src/sass/aos";
-
-// Import JVectorMap
-@import '../../vendor/jvectormap/jquery-jvectormap-2.0.3.css';
-
-// Import globals
-@import "global";
-
-// Import partials
-@import "welcome";
-@import "about";
-@import "work";
-@import "contact";
-@import "footer";
+@import "utils/module";
+@import "layout/module";
+@import "sections/module";
